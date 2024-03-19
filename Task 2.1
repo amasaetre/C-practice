@@ -1,18 +1,17 @@
 using System;
 
-class ShellSortExample
+class Program
 {
     static void Main(string[] args)
     {
-        int[] array = { 12, 34, 54, 2, 3, 1, 45, 67, 23 }; // Исходный массив элементов
+        int[] array = { 12, 34, 54, 2, 3, 1, 45, 67, 23 };
         Console.WriteLine("Исходный массив:");
         PrintArray(array);
 
-        ShellSort(array); // Сортировка Шелла
-        Console.WriteLine("\n Отсортированный массив:");
+        ShellSort(array);
+        Console.WriteLine("\n Отсортированный массив (сортировка Шелла):");
         PrintArray(array);
 
-        // Добавление элементов в массив
         Console.WriteLine("\n Введите элементы массива (через запятую):");
         string input = Console.ReadLine();
         string[] elements = input.Split(',');
@@ -23,6 +22,10 @@ class ShellSortExample
         }
 
         Console.WriteLine("\n Массив после добавления элементов:");
+        PrintArray(array);
+
+        ShellSort(array);
+        Console.WriteLine("\n Отсортированный массив после добавления элементов (сортировка Шелла):");
         PrintArray(array);
     }
 
