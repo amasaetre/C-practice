@@ -9,11 +9,11 @@ class ShellSortExample
         PrintArray(array);
 
         ShellSort(array); // Сортировка Шелла
-        Console.WriteLine("\nОтсортированный массив:");
+        Console.WriteLine("\n Отсортированный массив:");
         PrintArray(array);
 
         // Добавление элементов в массив
-        Console.WriteLine("\nВведите элементы массива (через запятую):");
+        Console.WriteLine("\n Введите элементы массива (через запятую):");
         string input = Console.ReadLine();
         string[] elements = input.Split(',');
         array = new int[elements.Length];
@@ -22,7 +22,7 @@ class ShellSortExample
             array[i] = int.Parse(elements[i]);
         }
 
-        Console.WriteLine("\nМассив после добавления элементов:");
+        Console.WriteLine("\n Массив после добавления элементов:");
         PrintArray(array);
     }
 
