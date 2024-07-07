@@ -1,6 +1,6 @@
 using System;
 
-class MergeSortExample
+class Program
 {
     public static void Main(string[] args)
     {
